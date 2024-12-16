@@ -14,7 +14,7 @@ const Experience = () => {
                                 <p>FEB 2023 — PRESENT</p>
                             </div>
                             <div className="col-span-1 lg:col-span-3 p-3">
-                                <h3 className="font-bold">Senior Web Developer &bull; <span className='text-gray-400'>AREA15</span></h3>
+                                <h3 className="font-bold">Senior Software Developer &bull; <span className='text-gray-400'>AREA15</span></h3>
                                 <p className='text-gray-400 mt-3'>
                                     I currently lead the development and enhancement of diverse projects for area15.com and other entertainment-focused applications.
                                     My work includes designing on-site ticketing kiosks, developing immersive games using JavaScript and Next.js,

@@ -6,7 +6,7 @@ import Projects from '../../components/projects';
 
 const Main = () => {
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-    const [activeSection, setActiveSection] = useState("");
+    const [activeSection, setActiveSection] = useState("section1");
     const [showScrollTop, setShowScrollTop] = useState(false);
     const rightColumnRef = useRef(null);
 
@@ -106,7 +106,7 @@ const Main = () => {
                         </button> */}
                     </nav>
 
-                    <div className="flex items-center gap-5 justify-center mt-20">
+                    <div className="flex items-center gap-5 justify-center mt-40">
                         <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/kevin-chancey-a736169b/"><img src="/linkedin.svg" alt="LinkedIn" width={23} title="LinkedIn" /></a>
                         <a rel="noreferrer" target="_blank" href="https://github.com/R2DEV0"><img src="/github.svg" alt="Github" width={25} title="Github" /></a>
                         <a rel="noreferrer" target="_blank" href="https://www.instagram.com/kevchancey/"><img src="/insta.svg" alt="Instagram" width={25} title="Instagram" /></a>
