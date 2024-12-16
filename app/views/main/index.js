@@ -134,13 +134,13 @@ const Main = () => {
                     
                     {/* <Projects /> */}
 
-                    <div className="md:hidden flex items-center gap-5 justify-start my-10">
+                    <div className="md:hidden flex items-center gap-5 justify-start mt-10">
                         <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/kevin-chancey-a736169b/"><img src="/linkedin.svg" alt="LinkedIn" width={23} title="LinkedIn" /></a>
                         <a rel="noreferrer" target="_blank" href="https://github.com/R2DEV0"><img src="/github.svg" alt="Github" width={25} title="Github" /></a>
                         <a rel="noreferrer" target="_blank" href="https://www.instagram.com/kevchancey/"><img src="/insta.svg" alt="Instagram" width={25} title="Instagram" /></a>
                         <a rel="noreferrer" target="_blank" href="https://www.facebook.com/kevinr.chancey"><img src="/facebook.svg" alt="Facebook" width={23} title="Facebook" /></a>
                     </div>
-                    <div className="md:hidden mt-5 mb-10">
+                    <div className="md:hidden mt-5 mb-20">
                         <a rel="noreferrer" target="_blank" href="/KevinChanceyResume.pdf"><span className="font-bold tx-white hover:text-white">View My Resume</span> ↗</a>
                     </div>
                     
