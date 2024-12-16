@@ -31,10 +31,16 @@ body {
   width: 100vw;
 }
 
+img:hover{
+  cursor: pointer;
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+
 nav button {
   position: relative;
   font-size: 1rem;
-  padding: 0.5rem 0;
+  padding: 0.4rem 0;
   background: none;
   border: none;
   color: white;
@@ -67,5 +73,5 @@ nav button.active::after {
 }
 
 .phrase{
-  color: #b8b6b6;
+  color: #c9c7c7;
 }
