@@ -75,3 +75,20 @@ nav button.active::after {
 .phrase{
   color: #c9c7c7;
 }
+
+.details-container {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.details-container.open {
+  max-height: 200px; /* Adjust based on expected content size */
+  opacity: 1;
+}
+
+.details-content {
+  display: block;
+  padding-top: 8px;
+}

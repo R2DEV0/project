@@ -3,12 +3,36 @@ import About from '../../components/about';
 import Education from '../../components/education';
 import Experience from '../../components/experience';
 import Projects from '../../components/projects';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faComment, faClose } from '@fortawesome/free-solid-svg-icons';
+import axios from 'axios';
 
 const Main = () => {
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const [activeSection, setActiveSection] = useState("section1");
     const [showScrollTop, setShowScrollTop] = useState(false);
     const rightColumnRef = useRef(null);
+    const [chatOpen, setChatOpen] = useState(false);
+    const [prompt, setPrompt] = useState("");
+    const [chatHistory, setChatHistory] = useState([{sender: "Kevbot", message: "Hello, I am the Kevbot. Chat with me to learn more about Kevin!"}]);
+    const chatEndRef = useRef(null);
+
+    const MakeCall = async () => {
+        setChatHistory(p => [...p, { 'sender': 'You', 'message': prompt }]);
+        const res = await axios.post('/api/openai', {input: prompt});
+        if(res.data.statusCode === 200){
+            setChatHistory(p => [...p, { 'sender': 'Kevbot', 'message': res.data.data }]);
+            setPrompt("");
+        } else {
+            setChatHistory(p => [...p, { 'sender': 'Kevbot', 'message': 'Something went wrong. Please try again.' }]);
+        };
+    };
+
+    useEffect(() => {
+        if (chatEndRef.current && chatOpen) {
+            chatEndRef.current.scrollIntoView({ behavior: 'smooth' });
+        };
+    }, [chatHistory, chatOpen]);
 
     useEffect(() => {
         const handleMouseMove = (e) => {
@@ -150,10 +174,61 @@ const Main = () => {
             {showScrollTop && (
                 <button
                     onClick={scrollToTop}
-                    className="fixed bottom-3 md:right-8 right-3 p-3 w-[50px] bg-gray-300 rounded-lg text-white shadow-lg hover:bg-gray-500 transition-opacity bg-opacity-60"
+                    className="fixed bottom-20 md:right-8 right-3 p-3 w-[50px] bg-gray-300 rounded-lg text-white shadow-lg hover:bg-gray-500 transition-opacity bg-opacity-60"
                     aria-label="Scroll to top"
                 >
                     <img src="/up.png" className="w-full" />
+                </button>
+            )}
+
+            {chatOpen && (
+                <div className="chat-body fixed bottom-3 text-gray-400 right-3 md:right-8 bg-gray-800 border border-gray-300 shadow-lg rounded-lg px-4 py-3 w-80 z-50">
+                    <div className="chat-header flex items-center justify-between mb-4">
+                        <h3 className="text-lg font-bold text-white">Chat</h3>
+                            <button
+                            type="button"
+                            className="close-chat text-gray-200"
+                            onClick={() => setChatOpen(false)}
+                            >
+                            <FontAwesomeIcon icon={faClose} className="text-lg" />
+                        </button>
+                    </div>
+                    <div className="chat-sec mt-4 flex flex-col justify-start w-full items-center h-64 overflow-y-auto">
+                        {chatHistory.map((chat, i) => (
+                            <div key={i} className={`p-2 mb-2 chat-box ${chat.sender === "You" ? "text-right self-end" : "text-left"}`}>
+                                <p className="text-gray-300"><strong>{chat.sender}</strong></p>
+                                <p className="mt-1">{chat.message}</p>
+                            </div>
+                        ))}
+                        <div ref={chatEndRef}></div>
+                    </div>
+                    <div className="input-sec mt-4 flex flex-col items-center">
+                        <input
+                            type="text"
+                            className="chat-input w-full text-gray-900 bg-gray-300 hover:bg-gray-400 p-2 rounded"
+                            value={prompt}
+                            onChange={(e) => setPrompt(e.target.value)}
+                        />
+                        <div className="mt-2 flex items-center justify-between w-full">
+                            <button
+                                type="button"
+                                className="submit-button w-full bg-blue-900 text-white px-4 py-2 rounded hover:bg-gray-700"
+                                onClick={MakeCall}
+                            >
+                                SUBMIT
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
+
+            {!chatOpen && (
+                <button
+                    type="button"
+                    className="open-chat fixed md:bottom-3 md:right-8 bottom-3 right-3 bg-gray-500 hover:bg-gray-300 text-white hover:text-gray-600 px-3 py-3 rounded-lg bg-opacity-80 transition-all duration-300"
+                    onClick={() => setChatOpen(true)}
+                >
+                    <FontAwesomeIcon icon={faComment} className='text-2xl'/>
                 </button>
             )}
         </div>
