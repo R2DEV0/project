@@ -72,8 +72,8 @@ const Education = () => {
               visibleSections.includes(index) ? 'opacity-100 translate-y-0' : ''
             } border-l-4 lg:border-r-4 lg:border-l-0 border-blue-900 pl-4 md:pr-8`}
             onClick={() => handleToggle(index)}
-            onMouseEnter={() => setActiveIndex(index)}
-            onMouseLeave={() => setActiveIndex(null)}
+            onMouseEnter={() => handleToggle(index)}
+            onMouseLeave={() => handleToggle()}
           >
             <h3 className="font-semibold text-lg">{item.title}</h3>
             <p className="text-sm text-gray-500">{item.subtitle}</p>

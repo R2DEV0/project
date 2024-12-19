@@ -102,7 +102,7 @@ const Experience = () => {
             href={job.link}
             rel="noreferrer"
             target="_blank"
-            className={`col-span-1 lg:col-span-4 rounded-xl border border-transparent hover:shadow-lg hover:border-gray-600 transition-all duration-300 block transform transition-all duration-700 ease-in-out opacity-0 translate-y-10 ${
+            className={`col-span-1 lg:col-span-4 rounded-xl border md:border-transparent border-gray-600 hover:shadow-lg hover:border-gray-600 transition-all duration-300 block transform transition-all duration-700 ease-in-out opacity-0 translate-y-10 ${
               visibleSections.includes(index) ? 'opacity-100 translate-y-0' : ''
             }`}
             ref={(el) => (sectionRefs.current[index] = el)}
