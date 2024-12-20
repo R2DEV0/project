@@ -14,7 +14,7 @@ const Main = () => {
     const rightColumnRef = useRef(null);
     const [chatOpen, setChatOpen] = useState(false);
     const [prompt, setPrompt] = useState("");
-    const [chatHistory, setChatHistory] = useState([{sender: "Kevbot", message: "Hello, I am the Kevbot. Chat with me to learn more about Kevin!"}]);
+    const [chatHistory, setChatHistory] = useState([{sender: "Kevbot", message: "Hello, I am Kevbot. Chat with me to learn more about Kevin!"}]);
     const chatEndRef = useRef(null);
 
     const MakeCall = async () => {
@@ -122,12 +122,12 @@ const Main = () => {
                         >
                             EDUCATION
                         </button>
-                        {/* <button
+                        <button
                             onClick={() => handleNavigation("section4")}
                             className={`block hover:text-white ${activeSection === "section4" ? "active" : ""}`}
                         >
                             PROJECTS
-                        </button> */}
+                        </button>
                     </nav>
 
                     <div className="flex items-center gap-5 justify-center mt-40">
@@ -156,7 +156,7 @@ const Main = () => {
                     
                     <Education />
                     
-                    {/* <Projects /> */}
+                    <Projects />
 
                     <div className="md:hidden flex items-center gap-5 justify-start mt-10">
                         <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/kevin-chancey-a736169b/"><img src="/linkedin.svg" alt="LinkedIn" width={23} title="LinkedIn" /></a>
