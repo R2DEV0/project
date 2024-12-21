@@ -28,7 +28,7 @@ const Projects = () => {
   return (
     <section id="section4" className="min-h-screen py-20 leading-relaxed">
       <h2 className="text-2xl font-bold mb-4 md:hidden">Professional Projects</h2>
-      <div className="space-y-16">
+      <div className="space-y-16 mt-5">
         {projects.map((project, index) => (
           <div
             key={index}

@@ -144,7 +144,7 @@ const Main = () => {
 
                 {/* Right Side: Scrollable Content */}
                 <div ref={rightColumnRef} className="flex-1 overflow-y-auto tx-white md:pl-10 md:pr-40 px-5">
-                    <div className="md:hidden pt-8">
+                    <div className="md:hidden mt-8">
                         <h1 className="text-3xl font-bold">Kevin Chancey</h1>
                         <p className="text-lg mt-2 subtitle">Full-Stack Developer</p>
                         <p className="mt-4 text-sm phrase">Crafting elegant solutions for complex problems, from front to back.</p>
@@ -164,7 +164,7 @@ const Main = () => {
                         <a rel="noreferrer" target="_blank" href="https://www.instagram.com/kevchancey/"><img src="/insta.svg" alt="Instagram" width={25} title="Instagram" /></a>
                         <a rel="noreferrer" target="_blank" href="https://www.facebook.com/kevinr.chancey"><img src="/facebook.svg" alt="Facebook" width={23} title="Facebook" /></a>
                     </div>
-                    <div className="md:hidden mt-5 mb-20">
+                    <div className="md:hidden pt-5 pb-20">
                         <a rel="noreferrer" target="_blank" href="/KevinChanceyResume.pdf"><span className="font-bold tx-white hover:text-white">View My Resume</span> ↗</a>
                     </div>
                     
