@@ -40,9 +40,9 @@ const About = () => {
                 }`}
             >
                 At <a className="font-bold" href="https://area15.com/" rel="noreferrer" target="_blank">AREA15</a>, 
-                I create and maintain cutting-edge web applications, integrating technologies like WebXR, AR, and Next.js to enhance user experiences. 
+                I create and maintain cutting-edge web applications, integrating technologies like React, Node.js, AWS, AI, Netlify, and Next.js to enhance user experiences. 
                 I design responsive platforms, develop custom WordPress plugins, and streamline operations using APIs such as Stripe, HubSpot, 
-                and Ticketure. With over five years of experience, I combine technical proficiency with strategic problem-solving to deliver impactful results.
+                Ticketure, custom integrations, and more. With over five years of experience, I combine technical proficiency with strategic problem-solving to deliver impactful results.
             </p>
             <p
                 className={`mt-4 transition-opacity duration-1000 ease-in ${
@@ -51,7 +51,7 @@ const About = () => {
             >
                 My journey includes leading innovative projects, such as an SMS-based valet system, virtual queues, casino marketing, 
                 and gaming reward systems at <a className="font-bold" href="https://strategy9.com/" rel="noreferrer" target="_blank">Strategy9 </a> 
-                and scalable virtual education platforms at <a className="font-bold" href="https://depthcomplexity.com/" rel="noreferrer" target="_blank">J Taylor Education</a>. 
+                and scalable virtual education platforms utilized by educators accross the world at <a className="font-bold" href="https://depthcomplexity.com/" rel="noreferrer" target="_blank">J Taylor Education</a>. 
                 Whether optimizing infrastructure, enhancing user experiences, or driving customer engagement, I bring a results-driven 
                 approach and a passion for turning complex challenges into seamless solutions.
             </p>

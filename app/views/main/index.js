@@ -130,14 +130,16 @@ const Main = () => {
                         </button>
                     </nav>
 
-                    <div className="flex items-center gap-5 justify-center mt-40">
-                        <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/kevin-chancey-a736169b/"><img src="/linkedin.svg" alt="LinkedIn" width={23} title="LinkedIn" /></a>
-                        <a rel="noreferrer" target="_blank" href="https://github.com/R2DEV0"><img src="/github.svg" alt="Github" width={25} title="Github" /></a>
-                        <a rel="noreferrer" target="_blank" href="https://www.instagram.com/kevchancey/"><img src="/insta.svg" alt="Instagram" width={25} title="Instagram" /></a>
-                        <a rel="noreferrer" target="_blank" href="https://www.facebook.com/kevinr.chancey"><img src="/facebook.svg" alt="Facebook" width={23} title="Facebook" /></a>
-                    </div>
-                    <div className="mt-5">
-                        <a rel="noreferrer" target="_blank" href="/KevinChanceyResume.pdf"><span className="font-bold tx-white hover:text-white">View My Resume</span> ↗</a>
+                    <div className="mt-20">
+                        <div className="flex items-center gap-5 justify-center">
+                            <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/kevin-chancey-a736169b/"><img src="/linkedin.svg" alt="LinkedIn" width={23} title="LinkedIn" /></a>
+                            <a rel="noreferrer" target="_blank" href="https://github.com/R2DEV0"><img src="/github.svg" alt="Github" width={25} title="Github" /></a>
+                            <a rel="noreferrer" target="_blank" href="https://www.instagram.com/kevchancey/"><img src="/insta.svg" alt="Instagram" width={25} title="Instagram" /></a>
+                            <a rel="noreferrer" target="_blank" href="https://www.facebook.com/kevinr.chancey"><img src="/facebook.svg" alt="Facebook" width={23} title="Facebook" /></a>
+                        </div>
+                        <div className="mt-5">
+                            <a rel="noreferrer" target="_blank" href="/KevinChanceyResume.pdf"><span className="font-bold tx-white hover:text-white">View My Resume</span> ↗</a>
+                        </div>
                     </div>
 
                 </div>
@@ -158,14 +160,16 @@ const Main = () => {
                     
                     <Projects />
 
-                    <div className="md:hidden flex items-center gap-5 justify-start mt-10">
-                        <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/kevin-chancey-a736169b/"><img src="/linkedin.svg" alt="LinkedIn" width={23} title="LinkedIn" /></a>
-                        <a rel="noreferrer" target="_blank" href="https://github.com/R2DEV0"><img src="/github.svg" alt="Github" width={25} title="Github" /></a>
-                        <a rel="noreferrer" target="_blank" href="https://www.instagram.com/kevchancey/"><img src="/insta.svg" alt="Instagram" width={25} title="Instagram" /></a>
-                        <a rel="noreferrer" target="_blank" href="https://www.facebook.com/kevinr.chancey"><img src="/facebook.svg" alt="Facebook" width={23} title="Facebook" /></a>
-                    </div>
-                    <div className="md:hidden pt-5 pb-20">
-                        <a rel="noreferrer" target="_blank" href="/KevinChanceyResume.pdf"><span className="font-bold tx-white hover:text-white">View My Resume</span> ↗</a>
+                    <div className="md:hidden mt-10 mb-10">
+                        <div className="flex items-center gap-5 justify-start">
+                            <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/kevin-chancey-a736169b/"><img src="/linkedin.svg" alt="LinkedIn" width={23} title="LinkedIn" /></a>
+                            <a rel="noreferrer" target="_blank" href="https://github.com/R2DEV0"><img src="/github.svg" alt="Github" width={25} title="Github" /></a>
+                            <a rel="noreferrer" target="_blank" href="https://www.instagram.com/kevchancey/"><img src="/insta.svg" alt="Instagram" width={25} title="Instagram" /></a>
+                            <a rel="noreferrer" target="_blank" href="https://www.facebook.com/kevinr.chancey"><img src="/facebook.svg" alt="Facebook" width={23} title="Facebook" /></a>
+                        </div>
+                        <div className="pt-5">
+                            <a rel="noreferrer" target="_blank" href="/KevinChanceyResume.pdf"><span className="font-bold tx-white hover:text-white">View My Resume</span> ↗</a>
+                        </div>
                     </div>
                     
                 </div>
