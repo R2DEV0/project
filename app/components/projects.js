@@ -17,11 +17,32 @@ const Projects = () => {
       image: "/dandc.jpg",
     },
     {
+      title: "Destabilizer",
+      description: "An immersive user experience, utilizing AI and various technologies, that transports users into different dimensions and realities at AREA15.",
+      github: "https://github.com/R2DEV0/destabilizer",
+      link: null,
+      image: "/destabilizer.jpg",
+    },
+    {
       title: "Depth & Complexity Plugin",
       description: "A custom WordPress plugin enabling J Taylor Education to seamlessly integrate custom Depth & Complexity tools into their website using PHP and MERN.",
       github: "https://github.com/R2DEV0/Depth-Complexity-Plugin",
       link: "https://depthcomplexity.com/",
       image: "/dc_land.png",
+    },
+    {
+      title: "Locker Rental System",
+      description: "A custom app integrated with a third-party locker system, allowing users to rent, reserve, and access lockers at AREA15 through advanced APIs and technologies.",
+      github: "https://github.com/R2DEV0/lockers",
+      link: null,
+      image: "/lockers.jpg",
+    },
+    {
+      title: "Mobile Word Game",
+      description: "A mobile game unlocked via a beer QR code, immersing users in the world of AREA15. Powered by cutting-edge technologies, this game is a must-try to our locally crafted beers.",
+      github: "https://github.com/R2DEV0/word-game",
+      link: "https://descramblifier.area15.com/",
+      image: "/wordgame.jpg",
     },
   ];
 
@@ -47,14 +68,16 @@ const Projects = () => {
             <div className="w-full">
               <h3 className="text-xl font-bold mb-2">{project.title}</h3>
               <p className="mb-4">{project.description}</p>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noreferrer"
-                className="text-blue-500 underline hover:text-blue-700 mr-3"
-              >
-                Product Page
-              </a>
+              { project.link &&
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-blue-500 underline hover:text-blue-700 mr-3"
+                >
+                  Product Page
+                </a>
+              }
               <a
                 href={project.github}
                 target="_blank"
