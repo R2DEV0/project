@@ -3,8 +3,8 @@ import React from 'react';
 const Projects = () => {
   const projects = [
     {
-      title: "AREA15 Origin Quest",
-      description: "An immersive web-based scavenger hunt using Next.js/Netlify, WebXR, SendGrid, Hubspot, and Ticketure enhancing visitor engagement at AREA15.",
+      title: "Origin Quest Experience",
+      description: "An immersive web-based scavenger hunt using Next.js/Netlify, WebXR, SendGrid, Hubspot, and Ticketure enhancing visitor engagement.",
       github: "https://github.com/R2DEV0/area15_origin_quest",
       link: "https://area15.com/experiences/origin-quest/",
       image: "/oq.jpg",
@@ -17,8 +17,8 @@ const Projects = () => {
       image: "/dandc.jpg",
     },
     {
-      title: "Destabilizer",
-      description: "An immersive user experience, utilizing AI and various technologies, that transports users into different dimensions and realities at AREA15.",
+      title: "Restabilizer Experience",
+      description: "An immersive user experience, utilizing AI and various technologies, that transports users into different dimensions and realities.",
       github: "https://github.com/R2DEV0/destabilizer",
       link: null,
       image: "/destabilizer.jpg",
@@ -32,14 +32,14 @@ const Projects = () => {
     },
     {
       title: "Locker Rental System",
-      description: "A custom app integrated with a third-party locker system, allowing users to rent, reserve, and access lockers at AREA15 through advanced APIs and technologies.",
+      description: "A custom app integrated with a third-party locker system, allowing users to rent, reserve, and access lockers at in-venue through advanced APIs and technologies.",
       github: "https://github.com/R2DEV0/lockers",
       link: null,
       image: "/lockers.jpg",
     },
     {
       title: "Mobile Word Game",
-      description: "A mobile game unlocked via a beer QR code, immersing users in the world of AREA15. Powered by cutting-edge technologies, this game is a must-try to our locally crafted beers.",
+      description: "A mobile game, unlocked via a beer QR code, immersing users in the world of our alternate reality through cutting-edge technologies and tools.",
       github: "https://github.com/R2DEV0/word-game",
       link: "https://descramblifier.area15.com/",
       image: "/wordgame.jpg",
