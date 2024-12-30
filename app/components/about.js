@@ -29,7 +29,7 @@ const About = () => {
                 <a className="font-bold" href="https://area15.com/" rel="noreferrer" target="_blank"> AREA15</a>, 
                 <a className="font-bold" href="https://strategy9.com/" rel="noreferrer" target="_blank"> Strategy9</a>, and 
                 <a className="font-bold" href="https://depthcomplexity.com/" rel="noreferrer" target="_blank"> J Taylor Education</a>. 
-                With a BS in Applied Computing and certifications in full-stack development and 
+                With a BS in Computer Science, BS in Business and certifications in full-stack development and 
                 <a className="font-bold" href="https://aws.amazon.com/certification/certified-developer-associate/" rel="noreferrer" target="_blank"> AWS</a>, 
                 I specialize in building user-focused, scalable solutions using technologies like MERN/next.js, Python, C#/.NET, and WordPress/PHP. 
                 My expertise spans immersive games, virtual education platforms, and custom business tools, delivering innovative solutions tailored to diverse needs.
