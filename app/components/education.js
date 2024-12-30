@@ -13,12 +13,12 @@ const Education = () => {
     },
     {
       title: 'City University of Seattle',
-      subtitle: 'BS in Applied Computing - Seattle, WA - 2021',
+      subtitle: 'BS in Computer Science - Seattle, WA - 2021',
       details: 'Focused on software engineering principles, cloud computing, and modern development practices.',
     },
     {
       title: 'Coding Dojo',
-      subtitle: 'Full-Stack Developer Certificate - Seattle, WA - 2020',
+      subtitle: 'Full-Stack Developer Certificate - Bellevue, WA - 2020',
       details: 'Gained expertise in the MERN stack, Python/Django, C#/.NET, and agile development methodologies.',
     },
     {
