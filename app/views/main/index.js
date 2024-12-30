@@ -162,8 +162,8 @@ const Main = () => {
 
                     <div className="md:hidden mt-10 mb-10">
                         <div className="flex items-center gap-5 justify-start">
-                            <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/kevin-chancey-a736169b/"><img src="/linkedin.svg" alt="LinkedIn" width={23} title="LinkedIn" /></a>
-                            <a rel="noreferrer" target="_blank" href="https://github.com/R2DEV0"><img src="/github.svg" alt="Github" width={25} title="Github" /></a>
+                            <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/kevin-chancey"><img src="/linkedin.svg" alt="LinkedIn" width={23} title="LinkedIn" /></a>
+                            <a rel="noreferrer" target="_blank" href="https://www.github.com/R2DEV0"><img src="/github.svg" alt="Github" width={25} title="Github" /></a>
                             <a rel="noreferrer" target="_blank" href="https://www.instagram.com/kevchancey/"><img src="/insta.svg" alt="Instagram" width={25} title="Instagram" /></a>
                             <a rel="noreferrer" target="_blank" href="https://www.facebook.com/kevinr.chancey"><img src="/facebook.svg" alt="Facebook" width={23} title="Facebook" /></a>
                         </div>
