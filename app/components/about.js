@@ -32,7 +32,7 @@ const About = () => {
                 With a BS in Computer Science, BS in Business and certifications in full-stack development and 
                 <a className="font-bold" href="https://aws.amazon.com/certification/certified-developer-associate/" rel="noreferrer" target="_blank"> AWS</a>, 
                 I specialize in building user-focused, scalable solutions using technologies like MERN/next.js, Python, C#/.NET, and WordPress/PHP. 
-                My expertise spans immersive games, virtual education platforms, and custom business tools, delivering innovative solutions tailored to diverse needs.
+                My expertise spans custom transactional kiosks, immersive games, automated processes, virtual education platforms, and custom business tools, delivering innovative solutions tailored to diverse needs.
             </p>
             <p
                 className={`mt-4 transition-opacity duration-1000 ease-in ${
@@ -40,7 +40,7 @@ const About = () => {
                 }`}
             >
                 At <a className="font-bold" href="https://area15.com/" rel="noreferrer" target="_blank">AREA15</a>, 
-                I create and maintain cutting-edge web applications, integrating technologies like React, Node.js, AWS, AI, Netlify, and Next.js to enhance user experiences. 
+                I create and maintain cutting-edge web applications, integrating technologies like React, Node.js, AWS, Native Android, AI, Netlify, and Next.js to enhance user experiences. 
                 I design responsive platforms, develop custom WordPress plugins, and streamline operations using APIs such as Stripe, HubSpot, 
                 Ticketure, custom integrations, and more. With over five years of experience, I combine technical proficiency with strategic problem-solving to deliver impactful results.
             </p>
