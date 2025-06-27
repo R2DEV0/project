@@ -17,11 +17,6 @@ const Education = () => {
       details: 'Focused on software engineering principles, cloud computing, and modern development practices.',
     },
     {
-      title: 'Coding Dojo',
-      subtitle: 'Full-Stack Developer Certificate - Bellevue, WA - 2020',
-      details: 'Gained expertise in the MERN stack, Python/Django, C#/.NET, and agile development methodologies.',
-    },
-    {
       title: 'City University of Seattle',
       subtitle: 'BS in Business Administration - Seattle, WA - 2017',
       details: 'Learned essential business principles and project management strategies.',

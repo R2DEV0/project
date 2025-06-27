@@ -3,6 +3,7 @@ import About from '../../components/about';
 import Education from '../../components/education';
 import Experience from '../../components/experience';
 import Projects from '../../components/projects';
+import Skills from '../../components/skills';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComment, faClose } from '@fortawesome/free-solid-svg-icons';
 import axios from 'axios';
@@ -52,7 +53,7 @@ const Main = () => {
             if (rightColumn) {
                 setShowScrollTop(rightColumn.scrollTop > 300);
 
-                const sections = ["section1", "section2", "section3", "section4"];
+                const sections = ["section1", "section2", "section3", "section4", "section5"];
                 sections.forEach((sectionId) => {
                     const element = document.getElementById(sectionId);
                     if (element) {
@@ -128,6 +129,12 @@ const Main = () => {
                         >
                             PROJECTS
                         </button>
+                        <button
+                            onClick={() => handleNavigation("section5")}
+                            className={`block hover:text-white ${activeSection === "section5" ? "active" : ""}`}
+                        >
+                            SKILLS
+                        </button>
                     </nav>
 
                     <div className="mt-20">
@@ -159,6 +166,8 @@ const Main = () => {
                     <Education />
                     
                     <Projects />
+
+                    <Skills/>
 
                     <div className="md:hidden mt-10 mb-10">
                         <div className="flex items-center gap-5 justify-start">
