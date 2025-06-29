@@ -193,15 +193,14 @@ const Main = () => {
                     <img src="/up.png" className="w-full" />
                 </button>
             )}
-
             {chatOpen && (
                 <div className="chat-body fixed bottom-3 text-gray-400 right-3 md:right-8 bg-gray-800 border border-gray-300 shadow-lg rounded-lg px-4 py-3 w-80 z-50">
                     <div className="chat-header flex items-center justify-between mb-4">
                         <h3 className="text-lg font-bold text-white">Chat</h3>
                             <button
-                            type="button"
-                            className="close-chat text-gray-200"
-                            onClick={() => setChatOpen(false)}
+                                type="button"
+                                className="close-chat text-gray-200"
+                                onClick={() => setChatOpen(false)}
                             >
                             <FontAwesomeIcon icon={faClose} className="text-lg" />
                         </button>
