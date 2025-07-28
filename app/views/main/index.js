@@ -7,8 +7,12 @@ import Skills from '../../components/skills';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComment, faClose } from '@fortawesome/free-solid-svg-icons';
 import axios from 'axios';
+import { motion, useScroll} from "motion/react";
+import Cursor from '../../components/cursor';
 
 const Main = () => {
+
+    //#region consts
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const [activeSection, setActiveSection] = useState("section1");
     const [showScrollTop, setShowScrollTop] = useState(false);
@@ -17,7 +21,9 @@ const Main = () => {
     const [prompt, setPrompt] = useState("");
     const [chatHistory, setChatHistory] = useState([{sender: "Kevbot", message: "Hello, I am Kevbot. Chat with me to learn more about Kevin!"}]);
     const chatEndRef = useRef(null);
+    //#endregion
 
+    //#region makeCall
     const MakeCall = async () => {
         setChatHistory(p => [...p, { 'sender': 'You', 'message': prompt }]);
         const res = await axios.post('/api/openai', {input: prompt});
@@ -28,13 +34,17 @@ const Main = () => {
             setChatHistory(p => [...p, { 'sender': 'Kevbot', 'message': 'Something went wrong. Please try again.' }]);
         };
     };
+    //#endregion
 
+    //#region useEffetChat
     useEffect(() => {
         if (chatEndRef.current && chatOpen) {
             chatEndRef.current.scrollIntoView({ behavior: 'smooth' });
         };
     }, [chatHistory, chatOpen]);
+    //#endregion
 
+    //#region useEffectMouse
     useEffect(() => {
         const handleMouseMove = (e) => {
             setMousePosition({ x: e.clientX, y: e.clientY });
@@ -45,7 +55,9 @@ const Main = () => {
             window.removeEventListener("mousemove", handleMouseMove);
         };
     }, []);
+    //#endregion
 
+    //#region useEffectScroll
     useEffect(() => {
         // Attach the scroll event listener to the right column
         const rightColumn = rightColumnRef.current;
@@ -76,19 +88,24 @@ const Main = () => {
             };
         };
     }, []);
+    //#endregion
 
+    //#region ScrollToTop
     const scrollToTop = () => {
         if (rightColumnRef.current) {
             rightColumnRef.current.scrollTo({ top: 0, behavior: "smooth" });
         };
     };
+    //#endregion
 
+    //#region Nav
     const handleNavigation = (id) => {
         const target = document.getElementById(id);
         if (target) {
             target.scrollIntoView({ behavior: "smooth", block: "start" });
         };
     };
+    //#endregion
 
     return (
         <div
@@ -98,10 +115,25 @@ const Main = () => {
             }}
             className="h-screen overflow-hidden"
         >
+            
+            <Cursor />
+
             <div className="flex h-full">
                 <div className="hidden md:flex flex-col justify-start items-start text-white w-2/4 p-28">
-                    <h1 className="text-5xl title">Kevin Chancey</h1>
-                    <p className="text-xl mt-2 subtitle">Full-Stack Developer</p>
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h1 className="text-5xl title">Kevin Chancey</h1>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.5 }}
+                    >
+                        <p className="text-xl mt-2 subtitle">Full-Stack Developer</p>
+                    </motion.div>
                     <p className="mt-5 phrase lg:w-1/2 md:w-3/4">I craft elegant solutions for complex problems, from front to back.</p>
 
                     <nav className="mt-8 space-y-4">
